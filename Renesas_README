@@ -12,6 +12,10 @@ export ARCH=arm
 
 3) A pre-configured .config is found, but if you wish to change your setting, either use a .config derived from a target device, or change the one found here using 'make menuconfig' or other standard Kernel confiugraiotn tools.
 
+4) If there was some extra characters in your kernel version, like 2.6.32.9-063c4d24, you’d have to edit the Makefile to use the corresponding version:
+
+EXTRAVERSION = -063c4d24 
+
 4) Clean, then recompile the kernel:
 
 make clean
