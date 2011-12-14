@@ -1,0 +1,19 @@
+14 Dec 2011
+
+How to build the kernel for the Renesas EV platform
+
+1) Set your host cross-compiler chain. E.g.
+
+export CROSS_COMPILER=arm-eabi-
+
+2) Set the architecture to ARM:
+
+export ARCH=arm
+
+3) A pre-configured .config is found, but if you wish to change your setting, either use a .config derived from a target device, or change the one found here using 'make menuconfig' or other standard Kernel confiugraiotn tools.
+
+4) Clean, then recompile the kernel:
+
+make clean
+make
+
